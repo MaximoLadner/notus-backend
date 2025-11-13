@@ -29,12 +29,6 @@ Este proyecto fue desarrollado como parte de la Tecnicatura Universitaria en Pro
 
 La aplicación cuenta con documentación técnica generada automáticamente mediante Swagger y Swagger UI, lo que permite explorar y probar los endpoints de la API desde el navegador.
 
-🔍 Acceso a Swagger
-
-Una vez que el proyecto esté en ejecución, podés acceder a la documentación desde:
-
-https://localhost:5001/swagger
-
 o, si se ejecuta en otro puerto, reemplazá 5001 por el correspondiente.
 
 📘 Contenido de la documentación
@@ -55,6 +49,8 @@ Parámetros requeridos y opcionales para cada operación.
 
 La API expone distintos endpoints agrupados por entidad. A continuación se detallan los recursos principales disponibles a través de Swagger.
 
+🔹 Class
+
 | Método     | Endpoint          | Descripción                                 |
 | :--------- | :---------------- | :------------------------------------------ |
 | **GET**    | `/api/Class`      | Obtiene todas las clases registradas.       |
@@ -63,12 +59,15 @@ La API expone distintos endpoints agrupados por entidad. A continuación se deta
 | **PUT**    | `/api/Class/{id}` | Actualiza los datos de una clase existente. |
 | **DELETE** | `/api/Class/{id}` | Elimina una clase por su ID.                |
 
+🔹 Event
 
 | Método     | Endpoint          | Descripción                          |
 | :--------- | :---------------- | :----------------------------------- |
 | **GET**    | `/api/Event`      | Lista todos los eventos disponibles. |
 | **POST**   | `/api/Event`      | Crea un nuevo evento.                |
 | **DELETE** | `/api/Event/{id}` | Elimina un evento específico.        |
+
+🔹 User (Autenticación y Roles)
 
 | Método   | Endpoint               | Descripción                                                          |
 | :------- | :--------------------- | :------------------------------------------------------------------- |
